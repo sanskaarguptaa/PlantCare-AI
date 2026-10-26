@@ -3,7 +3,7 @@
  * Interfaces with the Flask backend REST API with safe error handling.
  */
 
-const API_BASE = '/api';
+const API_BASE = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '') + '/api';
 
 async function fetchJson(url, options = {}) {
   try {
