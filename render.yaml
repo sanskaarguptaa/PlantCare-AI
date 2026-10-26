@@ -1,0 +1,36 @@
+services:
+  # ── Backend: Flask REST API ──────────────────────────────────────────────────
+  - type: web
+    name: plantcare-ai-backend
+    runtime: python
+    rootDir: plantcare-ai/backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 2 --timeout 120
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: FLASK_DEBUG
+        value: "False"
+      - key: DEMO_MODE
+        value: "false"
+      - key: THINGSPEAK_CACHE_TTL_SECONDS
+        value: "20"
+      # Set these in Render Dashboard → Environment (don't put real keys here):
+      # - key: THINGSPEAK_CHANNEL_ID
+      #   value: your_channel_id
+      # - key: THINGSPEAK_READ_API_KEY
+      #   value: your_read_api_key
+      # - key: CORS_ORIGIN
+      #   value: https://plantcare-ai-frontend.onrender.com
+
+  # ── Frontend: React + Vite Static Site ──────────────────────────────────────
+  - type: web
+    name: plantcare-ai-frontend
+    runtime: static
+    rootDir: plantcare-ai/frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      # Set this in Render Dashboard → Environment after backend is deployed:
+      # - key: VITE_API_URL
+      #   value: https://plantcare-ai-backend.onrender.com
