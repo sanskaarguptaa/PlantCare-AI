@@ -48,6 +48,17 @@ For complete pin-by-pin connections, see [hardware/wiring_diagram.md](hardware/w
 
 ---
 
+## 📸 Hardware Setup & Proof of Implementation
+
+Physical hardware implementation running on Raspberry Pi 3 Model B with analog-to-digital converter (ADS1115) and environmental telemetry sensors:
+
+| Hardware Setup Overview | Sensor Wiring & Breadboard Connections |
+| :---: | :---: |
+| <img src="hardware/images/hardware_setup_1.jpg" alt="PlantCare IoT Hardware Setup 1" width="450"/> | <img src="hardware/images/hardware_setup_2.jpg" alt="PlantCare IoT Hardware Setup 2" width="450"/> |
+| *Raspberry Pi 3 Model B, ADS1115 ADC, and sensor telemetry assembly* | *Breadboard wiring, power distribution rails, and sensor pinout* |
+
+---
+
 ## 📂 Project Architecture
 
 ```

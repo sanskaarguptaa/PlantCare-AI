@@ -101,6 +101,17 @@ When `GPIO 17` triggers the relay, the mechanical switch closes between COM and 
 
 ---
 
+## 📸 Physical Hardware Setup Proof
+
+Below is the verified hardware setup running on Raspberry Pi 3 Model B, showing the ADS1115 ADC converter, sensor modules, and breadboard rails:
+
+| Hardware Overview | Circuit & Sensor Connections |
+| :---: | :---: |
+| <img src="images/hardware_setup_1.jpg" alt="Hardware Setup 1" width="450"/> | <img src="images/hardware_setup_2.jpg" alt="Hardware Setup 2" width="450"/> |
+| *Raspberry Pi 3 Model B IoT telemetry setup* | *Sensor wiring, I2C bus lines & ADC channel routing* |
+
+---
+
 ## 4. Soil Sensor Calibration Steps
 
 Capacitive sensors measure the dielectric permittivity of the soil. Before placing it permanently:

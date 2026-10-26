@@ -65,6 +65,13 @@ All analog sensors connect to the **ADS1115 16-bit ADC** over I²C (`0x48`). The
 
 > ⚠️ **Important BMP280 Note:** The BMP280 measures temperature and barometric pressure. Unlike the BME280, it does **not** measure humidity. PlantCare AI does not fabricate humidity readings.
 
+### 📸 Physical Hardware Implementation Proof
+
+| Hardware Overview | Circuit & Sensor Connections |
+| :---: | :---: |
+| <img src="../hardware/images/hardware_setup_1.jpg" alt="Hardware Proof 1" width="450"/> | <img src="../hardware/images/hardware_setup_2.jpg" alt="Hardware Proof 2" width="450"/> |
+| *Raspberry Pi 3 Model B IoT telemetry setup* | *ADS1115 ADC channel wiring and sensor connections* |
+
 ---
 
 ## 3. ThingSpeak Cloud Setup & Field Mapping
