@@ -1,0 +1,17 @@
+[Unit]
+Description=PlantCare AI Raspberry Pi Sensor Collector
+After=network.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/plant-monitor
+ExecStart=/home/pi/plant-monitor/.venv/bin/python collect_cloud.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

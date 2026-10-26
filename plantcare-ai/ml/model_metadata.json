@@ -1,0 +1,48 @@
+{
+  "model_type": "IsolationForest",
+  "version": "1.0.0",
+  "trained_at": "2026-10-25T21:41:40.887234+00:00",
+  "training_samples": 250,
+  "contamination_rate": 0.05,
+  "features": [
+    "soil_voltage_v",
+    "light_voltage_v",
+    "temperature_c",
+    "pressure_hpa",
+    "water_voltage_v"
+  ],
+  "feature_stats": {
+    "soil_voltage_v": {
+      "mean": 1.889,
+      "std": 0.34,
+      "min": 0.01,
+      "max": 2.456
+    },
+    "light_voltage_v": {
+      "mean": 1.295,
+      "std": 0.946,
+      "min": 0.071,
+      "max": 2.649
+    },
+    "temperature_c": {
+      "mean": 23.925,
+      "std": 2.211,
+      "min": 21.1,
+      "max": 42.1
+    },
+    "pressure_hpa": {
+      "mean": 1013.522,
+      "std": 1.721,
+      "min": 1010.51,
+      "max": 1015.96
+    },
+    "water_voltage_v": {
+      "mean": 0.055,
+      "std": 0.009,
+      "min": 0.04,
+      "max": 0.07
+    }
+  },
+  "decision_threshold": 0.0,
+  "notes": "Trained for sensor anomaly detection. Flagged readings represent unusual sensor shifts."
+}

@@ -1,0 +1,54 @@
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+*.key
+secrets.py
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Databases & Local Logs
+*.db
+*.sqlite3
+*.log
+plant_data_all.csv
+
+# Node & Frontend
+node_modules/
+frontend/dist/
+frontend/node_modules/
+.eslintcache
+.parcel-cache
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
